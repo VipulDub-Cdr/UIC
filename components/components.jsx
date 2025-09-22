@@ -9,6 +9,7 @@ import Project2 from "./projects/heropage2"
 import Project3 from "./projects/metallicButton1"
 import Project4 from "./projects/swipebutton"
 import Project5 from "./projects/heropage3"
+import Project6 from "./projects/template1"
 
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -18,19 +19,67 @@ export default function Projects() {
 
     const router = useRouter();
 
+    const [hero, setHero] = useState(true);
+    const [buttons, setButtons] = useState(false);
+    const [templates, setTemplates] = useState(false);
+    const [backgrounds, setBackgrounds] = useState(false);
+
+    const heroList = [<Project1/>, <Project2/>, <Project5/>];
+    const buttonList = [<Project3/>,<Project4/>];
+    const templateList = [<Project6/>];
+    const backgroundList = [];
+
+
+    const blackTailwind = " text-white bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-neutral-600"
+    const whiteTailwind = " text-black font-semibold bg-white ring-2 ring-neutral-400 border-2 border-neutral-200 inset-shadow-sm inset-shadow-neutral-400 "
+
+    useEffect(()=>{
+        gsap.from("#contents",{
+            y:15,
+            opacity:0,
+            duration:0.7,
+            delay:0,
+        })
+    },[hero, buttons, templates, backgrounds])
 
     return (
-        <div className="w-full h-[130vh] border-0 border-red-500 flex justify-center items-start bg-white relative overflow-hidden dark:bg-black">
+        <div className="w-full h-[130vh] border-0 border-red-500 flex flex-col justify-start items-center bg-white relative overflow-hidden dark:bg-black">
 
             <div id="background2" className="absolute w-full h-full top-[30%] left-[50%] rounded-t-full"></div>
 
-            <div className="w-[90%] md:w-[45%] h-full border-0 border-black flex flex-col justify-start items-center gap-2 py-2">
-                    <Project1/>
-                    <Project2/>
-                    <Project3/>
-                    <Project4/>
-                    <Project5/>
+            <div className="w-[90%] md:w-[45%] border-0 border-black h-12 flex flex-row justify-center items-center gap-2 pt-2">
+                <div onClick={()=>{setHero(!hero); setButtons(false); setTemplates(false); setBackgrounds(false)}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${hero ? whiteTailwind : blackTailwind}`}>Hero Pages</div>
+                <div onClick={()=>{setButtons(!buttons);setHero(false);setTemplates(false); setBackgrounds(false)}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${buttons ? whiteTailwind : blackTailwind}`}>Buttons</div>
+                <div onClick={()=>{setTemplates(!templates);setButtons(false);setHero(false); setBackgrounds(false)}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${templates ? whiteTailwind : blackTailwind}`}>Templates</div>
+                <div onClick={()=>{setBackgrounds(!backgrounds);setHero(false); setButtons(false); setTemplates(false);}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${backgrounds ? whiteTailwind : blackTailwind}`}>Backgrounds</div>
             </div>
+
+            <div id="contents" className="w-[90%] md:w-[45%] h-full border-0 border-black flex flex-col justify-start items-center gap-2 py-2">
+                    {hero ? (heroList.length==0 ? <NoComponents/> : heroList.map((item,index)=>{
+                            return item
+                    }) ): null}
+
+                    {templates ? (templateList.length==0 ? <NoComponents/> : templateList.map((item,index)=>{
+                            return item
+                    }) ): null}
+
+                    {buttons ? (buttonList.length==0 ? <NoComponents/> : buttonList.map((item,index)=>{
+                            return item
+                    }) ): null}
+
+                    {backgrounds ? (backgroundList.length==0 ? <NoComponents/> : backgroundList.map((item,index)=>{
+                            return item
+                    }) ): null}
+            </div>
+        </div>
+    )
+}
+
+function NoComponents({section}){
+
+    return (
+        <div className="w-full h-20 text-xl text-black font-medium pt-10 dark:text-white flex justify-center items-center border-0 border-black">
+                <div>Coming Soon...</div>            
         </div>
     )
 }

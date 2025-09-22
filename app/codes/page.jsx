@@ -28,20 +28,35 @@ export default function Codes(){
     },[])
 
 
+    // useEffect(()=>{
+    //   gsap.from("#toggle",{
+    //       y:40,
+    //       duration:0.5,
+    //   })
+    // },[dark])
+
     useEffect(()=>{
+    if(dark){
       gsap.from("#toggle",{
-          y:40,
-          duration:0.5,
+        y:40,
+        duration:0.5,
       })
-    },[dark])
+    }
+    else{
+      gsap.from("#toggle",{
+        y:-40,
+        duration:0.5,
+      })
+    }
+  },[dark])
 
     return (
-        <div className={`relative w-full h-full text-3xl text-black flex flex-col justify-start items-center ${dark ? "bg-black" : "bg-white"}`}>
+        <div className={`relative w-full h-full text-3xl text-black flex flex-col justify-start items-center transition-all delay-100 ${dark ? "bg-black" : "bg-white"}`}>
 
           <div id="introCodesLeft" className="absolute h-full w-[50%] left-0 bg-black z-100 flex justify-center items-start pt-[20%] text-[3rem] text-white font-semibold "></div>
           <div id="introCodesRight" className="absolute h-full w-[50%] right-0 bg-black z-100 flex justify-center items-start pt-[20%] text-[3rem] text-white font-semibold"></div>
 
-            <Navbar dark={dark} setDark={setDark}/>
+            {/* <Navbar dark={dark} setDark={setDark}/> */}
 
             <div className="w-full h-full mt-20 md:mt-0 border-0 border-black flex flex-col justify-center items-center">
 

@@ -31,10 +31,18 @@ export default function Home(){
   },[])
 
   useEffect(()=>{
-    gsap.from("#toggle",{
+    if(dark){
+      gsap.from("#toggle",{
         y:40,
         duration:0.5,
-    })
+      })
+    }
+    else{
+      gsap.from("#toggle",{
+        y:-40,
+        duration:0.5,
+      })
+    }
   },[dark])
 
   return (
@@ -98,6 +106,16 @@ export function Navbar({dark,setDark}){
     })
   }
 
+  useEffect(()=>{
+    gsap.to("#githublogo",{
+      scale:1.1,
+      duration:2,
+      delay:0,
+      repeat:-1,
+      yoyo:true,
+    })
+  },[])
+
   return (
     <div className={`w-full fixed h-20 flex flex-row justify-between items-center p-4 z-10 gap-2 md:gap-0 ${dark ? "bg-black" : "bg-white"} md:bg-transparent`}>
 
@@ -108,9 +126,9 @@ export function Navbar({dark,setDark}){
               <div id="firstbutton" className="absolute top-[90%] left-[45%] w-2 h-2 bg-black z-20 rounded-t-full"></div>
             </Link>
 
-            <div className="h-full w-[25%] hover:bg-neutral-300 border-2 bg-[#EBEBEB] rounded-2xl flex justify-center items-center gap-[3px]  transition-width delay-100 duration-300 hover:scale-95 cursor-pointer">
+            <div onClick={()=> window.open("https://github.com/VipulDub-Cdr/UIC","_blank")} className="h-full w-[25%] hover:bg-neutral-300 border-2 bg-[#EBEBEB] rounded-2xl flex justify-center items-center gap-[3px]  transition-width delay-100 duration-300 hover:scale-95 cursor-pointer">
               {/* <div className="text-lg text-neutral-950">Github</div> */}
-              <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" className="h-6 w-6"></img>
+              <img id="githublogo" src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" className="h-8 w-8"></img>
               {/* <Info className="stroke-black/30 h-4 w-4"/> */}
             </div>
             
@@ -118,7 +136,7 @@ export function Navbar({dark,setDark}){
                       <div className="text-lg tracking-tighter text-neutral-200 dark:text-black">Codes</div>
               </Link>
 
-            <div className="h-full w-[24%] border-2 bg-[#010203] dark:bg-white rounded-2xl flex justify-center items-center  transition-all delay-100 duration-300 hover:scale-95 cursor-pointer">
+            <div className="h-full w-[24%] border-2 bg-[#010203] dark:bg-white rounded-2xl flex justify-center items-center transition-all delay-100 duration-300 hover:scale-95 cursor-pointer">
               <div className="text-lg tracking-tighter text-neutral-200 dark:text-black">FAQS</div>
             </div>
       </div>
