@@ -1,103 +1,134 @@
-import Image from "next/image";
+"use client"
+import { Info } from "lucide-react";
+import Heropage from "@/components/heroPage";
+import Projects from "@/components/components";
+import gsap from "gsap"
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import {Moon, Sun} from "lucide-react"
 
-export default function Home() {
+export default function Home(){
+
+  const [dark, setDark] = useState(false);
+
+  useEffect(()=>{
+    gsap.to("#introLeft",{
+      width:0,
+      duration:2,
+      ease:"power2.out"
+    })
+    
+    gsap.to("#introRight",{
+      width:0,
+      duration:2,
+      ease:"power2.out"
+    })
+
+    // gsap.to("introText",{
+    //   opacity:0,
+    //   duration:2,
+    // })
+  },[])
+
+  useEffect(()=>{
+    gsap.from("#toggle",{
+        y:40,
+        duration:0.5,
+    })
+  },[dark])
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+        <div className={`bg-white min-h-screen w-full relative ${dark ? "dark" : "" }`}>
+          <div id="introLeft" className="absolute h-full w-[50%] left-0 bg-black z-100 flex justify-center items-start pt-[20%] text-[3rem] text-white font-semibold"></div>
+          <div id="introRight" className="absolute h-full w-[50%] right-0 bg-black z-100 flex justify-center items-start pt-[20%] text-[3rem] text-white font-semibold"></div>
+          
+          {/* <div
+          className="dark:hidden absolute inset-0 z-0"
+          style={{
+          backgroundImage: `
+          linear-gradient(to right, rgba(229,231,235,0.3) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(229,231,235,0.3) 1px, transparent 1px),
+          radial-gradient(circle 500px at 50% 20%, rgba(201, 197, 197, 0.1), transparent)
+          `,
+          backgroundSize: "48px 48px, 48px 48px, 100% 100%, 100% 100%",
+          }}
+          /> */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+          {/* <div id="introText" className="absolute h-full w-full bg-black z-100 flex justify-center items-start pt-[20%] text-[3rem] text-white font-semibold">Welcome to UIC</div> */}
+          <Navbar dark={dark} setDark={setDark}/>
+          <Heropage/>
+          <Projects/>
+          {/* <div className="h-screen w-full bg-neutral-400"></div> */}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+  )
+}
+
+export function Navbar({dark,setDark}){
+
+  function handleEnter(){
+    gsap.to("#firstbutton",{
+      scale:20,
+      backgroundColor:"white",
+      borderColor:"black",
+      duration:0.8,
+      delay:0,
+    })
+
+    gsap.to("#firsttext",{
+      color:"black",
+      duration:0.8,
+      delay:0,
+    })
+  }
+  
+  function handleLeave(){
+    gsap.to("#firstbutton",{
+      scale:0,
+      backgroundColor:"black",
+      borderColor:"white",
+      duration:0.8,
+      delay:0
+    })
+
+    gsap.to("#firsttext",{
+      color:"white",
+      duration:0.8,
+      delay:0,
+    })
+  }
+
+  return (
+    <div className={`w-full fixed h-20 flex flex-row justify-between items-center p-4 z-10 gap-2 md:gap-0 ${dark ? "bg-black" : "bg-white"} md:bg-transparent`}>
+
+      <div className="w-[80%] md:w-[22%] h-full flex flex-row justify-center item-center gap-[2px]">
+        {/* transition-all delay-100 duration-300 hover:scale-95 */}
+            <Link href={"/"} onMouseEnter={handleEnter} onMouseLeave={handleLeave} className="relative overflow-hidden h-full w-[24%] border-2 bg-[#010203] rounded-2xl flex justify-center items-center cursor-pointer">
+              <div id="firsttext" className="text-2xl font-extrabold tracking-tighter text-white z-30">UIC</div>
+              <div id="firstbutton" className="absolute top-[90%] left-[45%] w-2 h-2 bg-black z-20 rounded-t-full"></div>
+            </Link>
+
+            <div className="h-full w-[25%] hover:bg-neutral-300 border-2 bg-[#EBEBEB] rounded-2xl flex justify-center items-center gap-[3px]  transition-width delay-100 duration-300 hover:scale-95 cursor-pointer">
+              {/* <div className="text-lg text-neutral-950">Github</div> */}
+              <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" className="h-6 w-6"></img>
+              {/* <Info className="stroke-black/30 h-4 w-4"/> */}
+            </div>
+            
+              <Link href="/codes" className="h-full w-[24%] border-2 bg-[#010203] dark:bg-white rounded-2xl flex justify-center items-center  transition-all delay-100 duration-300 hover:scale-95 cursor-pointer">
+                      <div className="text-lg tracking-tighter text-neutral-200 dark:text-black">Codes</div>
+              </Link>
+
+            <div className="h-full w-[24%] border-2 bg-[#010203] dark:bg-white rounded-2xl flex justify-center items-center  transition-all delay-100 duration-300 hover:scale-95 cursor-pointer">
+              <div className="text-lg tracking-tighter text-neutral-200 dark:text-black">FAQS</div>
+            </div>
+      </div>
+
+      <button onClick={()=>{setDark(!dark)}} className="overflow-hidden flex py-2 md:py-0 w-12 h-12 border-2 border-black flex-row justify-center items-center text-white bg-[#010203] dark:bg-white rounded-2xl md:rounded-2xl transition-all delay-100 duration-300 hover:scale-95 cursor-pointer">
+        <div id="toggle" className="text-[0.8rem] md:text-lg text-center">
+          { dark ? <Sun className="dark:stroke-black"/> : <Moon/> }
+        </div>
+      </button>
+
     </div>
-  );
+  )
 }
