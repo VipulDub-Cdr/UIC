@@ -83,18 +83,18 @@ export default function Project3() {
                     <div className="w-full h-full rounded-xl overflow-hidden border-0 border-red-500 mt-2 bg-white mb-[3px] flex justify-center items-center">
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./metallicButton1.png" alt="" /> */}
 
-                        <div class="flex h-14 md:w-[73%] p-2 md:p-0 items-center justify-start rounded-full border-2 border-black/10 bg-green-950/60 shadow-md/10 inset-shadow-2xs inset-ring-2 inset-shadow-white inset-ring-neutral-400">
-                            <div class="relative z-100 md:ml-2 flex h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
-                                <div class="z-10 font-semibold hover:text-white">Home</div>
+                        <div className="flex h-14 md:w-[73%] p-2 md:p-0 items-center justify-start rounded-full border-2 border-black/10 bg-green-950/60 shadow-md/10 inset-shadow-2xs inset-ring-2 inset-shadow-white inset-ring-neutral-400">
+                            <div className="relative z-100 md:ml-2 flex h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
+                                <div className="z-10 font-semibold hover:text-white">Home</div>
                             </div>
-                            <div class="hidden md:flex relative z-100 ml-2 h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
-                                <div class="z-10 font-semibold hover:text-white">Services</div>
+                            <div className="hidden md:flex relative z-100 ml-2 h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
+                                <div className="z-10 font-semibold hover:text-white">Services</div>
                             </div>
-                            <div class="hidden md:flex relative z-100 ml-2 h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
-                                <div class="z-10 font-semibold hover:text-white">Products</div>
+                            <div className="hidden md:flex relative z-100 ml-2 h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
+                                <div className="z-10 font-semibold hover:text-white">Products</div>
                             </div>
-                            <div class="hidden md:flex relative z-100 ml-2 h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
-                                <div class="z-10 font-semibold hover:text-white">Pricing</div>
+                            <div className="hidden md:flex relative z-100 ml-2 h-10 w-18 cursor-pointer items-center justify-center rounded-full border-2 border-white bg-white text-[0.8rem] text-black/60 shadow-md/30 inset-shadow-sm inset-ring-2 inset-shadow-neutral-400 inset-ring-neutral-300 transition-all delay-100 duration-300 hover:bg-black/30 hover:text-white hover:inset-shadow-white">
+                                <div className="z-10 font-semibold hover:text-white">Pricing</div>
                             </div>
                         </div>
 
