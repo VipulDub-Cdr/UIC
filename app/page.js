@@ -6,6 +6,8 @@ import gsap from "gsap"
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import {Moon, Sun} from "lucide-react"
+import Faqs from "@/components/faqs";
+import Footer from "@/components/footer";
 
 export default function Home(){
 
@@ -67,6 +69,8 @@ export default function Home(){
           <Navbar dark={dark} setDark={setDark}/>
           <Heropage/>
           <Projects/>
+          <Faqs/>
+          <Footer/>
           {/* <div className="h-screen w-full bg-neutral-400"></div> */}
         </div>
   )

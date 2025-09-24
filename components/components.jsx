@@ -47,7 +47,7 @@ export default function Projects() {
     },[hero, buttons, templates, backgrounds])
 
     return (
-        <div className="w-full h-[130vh] border-0 border-red-500 flex flex-col justify-start items-center bg-white relative overflow-hidden dark:bg-black">
+        <div id="comps" className="w-full h-full pb-20 border-0 border-red-500 flex flex-col justify-start items-center bg-white relative overflow-hidden dark:bg-black">
 
             <div id="background2" className="absolute w-full h-full top-[30%] left-[50%] rounded-t-full"></div>
 
