@@ -116,7 +116,7 @@ export default function Project4() {
 
                 <div id="insidecard4" className={`w-full border-0 border-yellow-400 pt-4 h-0 overflow-hidden text-white flex flex-col justify-center items-start`}>
                     <div className="">Description</div>
-                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design features a full-screen layout with a centered hero section. The heading is prominently centered, with supporting content stacked vertically below it. Navigation elements are fixed at the top, and interactive buttons or cards are positioned below the main content.</div>
+                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design introduces a unique button with a sunrise animation. As users scroll or interact, a glowing orb rises smoothly from the bottom, mimicking the morning sun. The light background enhances contrast, while the motion adds a warm, natural feel to the button.</div>
                     <div className="w-full h-full overflow-hidden border-0 border-red-500 mt-2 bg-white mb-[3px] rounded-2xl flex justify-center items-center">
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./heropage2.png" alt="" /> */}
 

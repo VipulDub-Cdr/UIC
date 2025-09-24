@@ -87,7 +87,7 @@ export default function Darkbg1() {
 
                 <div id="insidecard8" className={`w-full border-0 border-yellow-400 pt-4 h-0 overflow-hidden text-white flex flex-col justify-center items-start`}>
                     <div className="">Description</div>
-                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design features a full-screen layout with a centered hero section. The heading is prominently centered, with supporting content stacked vertically below it. Navigation elements are fixed at the top, and interactive buttons or cards are positioned below the main content.</div>
+                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This background design uses faint vertical divider lines over a dark canvas. The subtle transparency in each line creates depth without overpowering the layout. It adds a sleek, grid-like aesthetic that enhances focus on the main content.</div>
                     <div className="w-full h-full overflow-hidden border-2 border-white/10 mt-2 bg-black mb-[3px] rounded-2xl flex justify-around items-center">
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./heropage2.png" alt="" /> */}
 

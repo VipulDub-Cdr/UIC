@@ -97,7 +97,7 @@ export default function Project7() {
 
                 <div id="insidecard7" className={`w-full border-0 border-yellow-400 pt-4 h-0 overflow-hidden text-white flex flex-col justify-center items-start`}>
                     <div className="">Description</div>
-                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This template features a dark layout with a top navigation bar, a central hero section containing a headline and call-to-action buttons, and a code editor demo at the bottom. Live link: <span className="underline transition-colors delay:100 duration:300 hover:text-[#313474]" onClick={()=>window.open("https://refrax-ai.vercel.app","_blank")}>https://refrax-ai.vercel.app</span></div>
+                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design features a sleek dropdown button with smooth expand animation. On click, options slide down with rounded edges and subtle shadows. The dark backdrop with soft highlights creates a modern, interactive feel.</div>
                     <div className="w-full h-full overflow-hidden border-0 border-red-500 mt-2 bg-black mb-[3px] rounded-2xl">
 
 

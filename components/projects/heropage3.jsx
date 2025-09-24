@@ -88,7 +88,7 @@ export default function Project2() {
 
                 <div id="insidecard5" className={`w-full border-0 border-yellow-400 pt-4 h-0 overflow-hidden text-white flex flex-col justify-center items-start`}>
                     <div className="">Description</div>
-                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design features a full-screen layout with a centered hero section. The heading is prominently centered, with supporting content stacked vertically below it. Navigation elements are fixed at the top, and interactive buttons or cards are positioned below the main content.</div>
+                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design presents a clean layout with balanced spacing. The hero content is centered on the left, while a smooth, rounded card styled in dark purple rests on the right. Navigation remains fixed at the top, with supporting text and interactive elements arranged neatly below the main content.</div>
                     <div className="w-full h-full overflow-hidden border-0 border-red-500 mt-2 bg-black mb-[3px] rounded-2xl">
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./heropage2.png" alt="" /> */}
 

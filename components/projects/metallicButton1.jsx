@@ -79,7 +79,7 @@ export default function Project3() {
 
                 <div id="insidecard3" className={`w-full border-0 border-yellow-400 pt-4 h-0 overflow-hidden text-white flex flex-col justify-center items-start`}>
                     <div className="">Description</div>
-                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design features a full-screen layout with a centered hero section. The heading is prominently centered, with supporting content stacked vertically below it. Navigation elements are fixed at the top, and interactive buttons or cards are positioned below the main content.</div>
+                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design arranges a sleek row of rounded buttons inside a bordered container. Each button features smooth transitions, shifting from light surfaces to darker tones on hover. The group blends into the layout while highlighting interactive options in an elegant dark-themed style.</div>
                     <div className="w-full h-full rounded-xl overflow-hidden border-0 border-red-500 mt-2 bg-white mb-[3px] flex justify-center items-center">
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./metallicButton1.png" alt="" /> */}
 

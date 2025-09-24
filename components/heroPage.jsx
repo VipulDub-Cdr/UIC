@@ -57,7 +57,7 @@ export default function Heropage({dark}){
                 <div id="bigcard" className="w-[76%] h-[85%] rounded-4xl ring-4 ring-neutral-700 inset-shadow-sm inset-shadow-white/30 border-2 border-white/80 -rotate-5 bg-black flex flex-col justify-center items-start p-[7px]">
 
                         <div className="w-full h-2/9 border-0 border-white text-[3rem] text-white px-2 font-extrabold tracking-tighter">UIC</div>
-                        <div className="w-[84%] h-3/9 border-0 border-white text-white text-[1.3rem]/5 p-2 font-semibold text-left">Discover creative jobs, connect with creative talents, and learn from industry leaders.</div>
+                        <div className="w-[95%] h-3/9 border-0 border-white text-white text-[1.3rem md:text-[1.3rem]/6 p-2 font-semibold text-left">Creative components designed to enhance your React web applications with modern design.</div>
                         <div className="w-full h-5/9 border-2 border-white bg-white rounded-3xl flex flex-col ring-2 ring-neutral-200 inset-shadow-sm inset-shadow-neutral-400">
 
                                 <div className="h-full w-full flex flex-row justify-start items-start p-2 gap-2">
@@ -65,18 +65,17 @@ export default function Heropage({dark}){
                                         <div className="w-full h-full rounded-lg bg-black flex justify-center items-center"><Check className="stroke-white w-[70%] h-[70%] rounded-xl bg-black" /></div>
                                     </div>
                                     <div className="h-full w-[85%] border-0 border-blue-400 flex flex-col justify-start items-start line">
-                                        <div className="text-[0.9rem] font-semibold text-neutral-900">1x Lorem ipsum dolor sit amet.</div>
-                                        <div className="text-[0.8rem] font-semibold text-neutral-400 tracking-tight">Featured for 30 days.</div>
+                                        <div className="text-[0.9rem] md:text-[0.9rem] font-semibold text-neutral-900">Use the components for free</div>
+                                        <div className="text-[0.8rem] font-semibold text-neutral-400 tracking-tight">Free to use in your projects</div>
                                     </div>
                                 </div>
-
                                 <div className="h-full w-full flex flex-row justify-start items-start p-2 gap-2">
                                     <div className="h-full w-[16%] border-0 border-blue-400 flex justify-center items-center p-2">
-                                        <div className="w-full h-[90%] rounded-lg bg-black flex justify-center items-center"><Check className="stroke-white w-[70%] h-[70%] rounded-xl bg-black" /></div>
+                                        <div className="w-full h-full rounded-lg bg-black flex justify-center items-center"><Check className="stroke-white w-[70%] h-[70%] rounded-xl bg-black" /></div>
                                     </div>
                                     <div className="h-full w-[85%] border-0 border-blue-400 flex flex-col justify-start items-start line">
-                                        <div className="text-[0.9rem] font-semibold text-neutral-900">1x Lorem ipsum dolor sit amet.</div>
-                                        <div className="text-[0.8rem]/3 font-semibold text-neutral-400 tracking-tight">Reach over 53k followers on Instagram and X</div>
+                                        <div className="text-[0.9rem] md:text-[0.9rem] font-semibold text-neutral-900">Open-source collection of comps</div>
+                                        <div className="text-[0.8rem] font-semibold text-neutral-400 tracking-tight">Aim to enhance your React web app</div>
                                     </div>
                                 </div>
 
@@ -105,7 +104,7 @@ export default function Heropage({dark}){
                 
                 
                 <div className="h-[9%] w-[76%] flex justify-center items-center ">
-                    <div className="w-[80%] md:w-[70%] h-full rounded-full bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-white/30 text-neutral-100 flex justify-center items-center text-[1rem] font-medium cursor-pointer ">
+                    <div className="w-[85%] md:w-[70%] h-full rounded-full bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-white/30 text-neutral-100 flex justify-center items-center text-[1rem] font-medium cursor-pointer ">
                         <div className="px-2 md:px-0">Custom Comps at $29 <span className="text-neutral-500 line-through">$49</span></div>
                     </div>
                 </div>

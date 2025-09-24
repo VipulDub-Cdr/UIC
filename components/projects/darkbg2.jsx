@@ -67,7 +67,7 @@ export default function Darkbg2() {
 
                 <div id="insidecard9" className={`w-full border-0 border-yellow-400 pt-4 h-0 overflow-hidden text-white flex flex-col justify-center items-start`}>
                     <div className="">Description</div>
-                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design features a full-screen layout with a centered hero section. The heading is prominently centered, with supporting content stacked vertically below it. Navigation elements are fixed at the top, and interactive buttons or cards are positioned below the main content.</div>
+                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">{`This design features a dark background enhanced by a soft top spotlight. Faint vertical lines add depth and structure without distracting from the content. The subtle illumination guides the viewer’s focus toward the top, creating a sleek, modern look.`}</div>
                     <div className="relative w-full h-full overflow-hidden border-2 border-white/10 mt-2 bg-radial-[at_50%_10px] from-white/15 to-black rounded-2xl flex justify-around items-center">
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./heropage2.png" alt="" /> */}
 
