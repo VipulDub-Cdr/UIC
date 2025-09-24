@@ -47,7 +47,7 @@ export default function Heropage({dark}){
                 
                 <div id="welcome" className="h-full w-full px-2 flex flex-col justify-start items-start">
                     <div className="text-xl font-semibold text-neutral-800 dark:text-neutral-400">Su Swagatam aapka</div>
-                    <div className="text-sm/4 font-semibold text-black/40 dark:text-neutral-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia eum at</div>
+                    <div className="text-sm/4 font-semibold text-black/40 dark:text-neutral-700">Aapka hamare website par swagat hai, explore kare aur enjoy kare!</div>
                 
                 </div>
             </div>
