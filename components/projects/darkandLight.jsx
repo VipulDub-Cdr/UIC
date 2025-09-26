@@ -108,13 +108,13 @@ export default function Project10() {
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./heropage2.png" alt="" /> */}
 
                         <div className="w-30 md:w-24 border-2 dark:border-neutral-500 rounded-lg flex justify-center items-center gap-2 px-[4px] py-[4px] bg-teal-500 dark:bg-transparent overflow-hidden">
-                            <Sun id="sun" className={`p-[3px] `} />
+                            <Sun id="sun" className={`p-[3px] rounded-sm bg-white stroke-black `} />
                             <Moon id="moon" className={`p-[3px] `} />
                             <LaptopMinimal className={`p-[3px]`}/>
                         </div>
                         <div className="w-30 md:w-24 border-2 border-neutral-500 rounded-lg flex justify-center items-center gap-2 px-[4px] py-[4px] bg-black overflow-hidden">
                             <Sun id="sun" className={`p-[3px] `} />
-                            <Moon id="moon" className={`p-[3px] `} />
+                            <Moon id="moon" className={`p-[3px] bg-white stroke-black rounded-sm `} />
                             <LaptopMinimal className={`p-[3px]`}/>
                         </div>
 
