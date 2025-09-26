@@ -14,6 +14,7 @@ import Project7 from "./projects/expandableButton"
 import Darkbg1 from "./projects/darkbg1"
 import Darkbg2 from "./projects/darkbg2"
 import Project9 from "./projects/heropage4"
+import Project10 from "./projects/darkandLight"
 
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -29,7 +30,7 @@ export default function Projects() {
     const [backgrounds, setBackgrounds] = useState(false);
 
     const heroList = [Project1, Project2, Project5, Project9];
-    const buttonList = [Project3, Project4, Project7];
+    const buttonList = [Project3, Project4, Project7, Project10];
     const templateList = [Project6];
     const backgroundList = [Darkbg1, Darkbg2];
 
