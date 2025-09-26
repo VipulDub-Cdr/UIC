@@ -92,8 +92,9 @@ export default function Project10() {
             {/* flex justify-center items-center bg-radial-[at_50%_99%] from-white to-yellow-500*/}
             <div className="relative w-[25%] md:w-[10%] h-15 bg-neutral-100 dark:bg-black text-white rounded-2xl inset-shadow-sm inset-shadow-black/60 overflow-hidden flex justify-center items-center">
 
-                
-                <Sun className="stroke-black"/>
+
+                <Sun className="stroke-black dark:hidden" />
+                <Moon className="stroke-white hidden dark:flex" />
 
             </div>
 
@@ -103,19 +104,21 @@ export default function Project10() {
 
                 <div id="insidecard10" className={`w-full border-0 border-yellow-400 pt-4 h-0 overflow-hidden text-white flex flex-col justify-center items-start`}>
                     <div className="">Description</div>
-                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This design introduces a unique button with a sunrise animation. As users scroll or interact, a glowing orb rises smoothly from the bottom, mimicking the morning sun. The light background enhances contrast, while the motion adds a warm, natural feel to the button.</div>
+                    <div className="font-semibold w-full border-0 border-white text-neutral-600 text-sm">This component is a theme toggle UI with light, dark, and system mode icons.
+                        It uses Sun, Moon, and LaptopMinimal icons styled with Tailwind CSS utilities.
+                        Each mode highlights the active state with a contrasting background and border style.</div>
                     <div className="w-full h-full overflow-hidden border-0 border-red-500 mt-2 bg-white mb-[3px] rounded-2xl flex justify-center items-center gap-10">
                         {/* <img className="w-full h-full object-cover rounded-lg" src="./heropage2.png" alt="" /> */}
 
-                        <div className="w-30 md:w-24 border-2 dark:border-neutral-500 rounded-lg flex justify-center items-center gap-2 px-[4px] py-[4px] bg-teal-500 dark:bg-transparent overflow-hidden">
+                        <div className="w-30 md:w-24 border-2 dark:border-neutral-500 rounded-lg flex justify-center items-center gap-2 px-[4px] py-[4px] bg-teal-500 overflow-hidden">
                             <Sun id="sun" className={`p-[3px] rounded-sm bg-white stroke-black `} />
                             <Moon id="moon" className={`p-[3px] `} />
-                            <LaptopMinimal className={`p-[3px]`}/>
+                            <LaptopMinimal className={`p-[3px]`} />
                         </div>
                         <div className="w-30 md:w-24 border-2 border-neutral-500 rounded-lg flex justify-center items-center gap-2 px-[4px] py-[4px] bg-black overflow-hidden">
                             <Sun id="sun" className={`p-[3px] `} />
                             <Moon id="moon" className={`p-[3px] bg-white stroke-black rounded-sm `} />
-                            <LaptopMinimal className={`p-[3px]`}/>
+                            <LaptopMinimal className={`p-[3px]`} />
                         </div>
 
                     </div>
