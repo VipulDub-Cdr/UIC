@@ -34,7 +34,6 @@ export default function Projects() {
     const templateList = [Project6];
     const backgroundList = [Darkbg1, Darkbg2];
 
-
     const blackTailwind = " text-white bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-neutral-600"
     const whiteTailwind = " text-black font-semibold bg-white ring-2 ring-neutral-400 border-2 border-neutral-200 inset-shadow-sm inset-shadow-neutral-400 "
 
@@ -52,14 +51,14 @@ export default function Projects() {
 
             <div id="background2" className="absolute w-full h-full top-[30%] left-[50%] rounded-t-full"></div>
 
-            <div className="w-[90%] md:w-[45%] border-0 border-black h-12 flex flex-row justify-center items-center gap-2 pt-2">
+            <div className="md:z-20 w-[90%] md:w-170 border-0 border-black h-12 flex flex-row justify-center items-center gap-2 pt-2">
                 <div onClick={()=>{setHero(true); setButtons(false); setTemplates(false); setBackgrounds(false)}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${hero ? whiteTailwind : blackTailwind}`}>Hero Pages</div>
                 <div onClick={()=>{setButtons(true);setHero(false);setTemplates(false); setBackgrounds(false)}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${buttons ? whiteTailwind : blackTailwind}`}>Buttons</div>
                 <div onClick={()=>{setTemplates(true);setButtons(false);setHero(false); setBackgrounds(false)}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${templates ? whiteTailwind : blackTailwind}`}>Templates</div>
                 <div onClick={()=>{setBackgrounds(true);setHero(false); setButtons(false); setTemplates(false);}} className={`w-1/4 md:w-1/6 text-[0.7rem] md:text-[1rem] h-full rounded-3xl flex justify-center items-center cursor-pointer transition-all delay-100 duration-300 ${backgrounds ? whiteTailwind : blackTailwind}`}>Backgrounds</div>
             </div>
 
-            <div id="contents" className="w-[90%] md:w-[45%] h-full border-0 border-black flex flex-col justify-start items-center gap-2 py-2">
+            <div id="contents" className="md:z-20 w-[90%] md:w-[45%] h-full border-0 border-black flex flex-col justify-start items-center gap-2 py-2">
                     {hero ? (heroList.length==0 ? <NoComponents/> : heroList.map((Comp,index)=>{
                             return <Comp key={index}/>
                     }) ): null}

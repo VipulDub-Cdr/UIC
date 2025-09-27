@@ -54,7 +54,7 @@ export default function Heropage({dark}){
 
             <div className="w-full md:w-[30%] h-full border-0 border-black flex flex-col justify-center items-center p-4 gap-6">
                 {/* transition-all delay-100 duration-300 hover:rotate-0 */}
-                <div id="bigcard" className="w-[76%] max-w-76 max-h-110 h-108 rounded-4xl ring-4 ring-neutral-700 inset-shadow-sm inset-shadow-white/30 border-2 border-white/80 -rotate-5 bg-black flex flex-col justify-center items-start p-[7px] md:mb-2">
+                <div id="bigcard" className="w-70 md:w-76 h-108 rounded-4xl ring-4 ring-neutral-700 inset-shadow-sm inset-shadow-white/30 border-2 border-white/80 -rotate-5 bg-black flex flex-col justify-center items-start p-[7px] md:mb-2">
 
                         <div className="w-full h-2/9 border-0 border-white text-[3rem] text-white px-2 font-extrabold tracking-tighter">UIC</div>
                         <div className="w-[95%] h-3/9 border-0 border-white text-white text-[1.3rem md:text-[1.3rem]/6 p-2 font-semibold text-left">Creative components designed to enhance your React web applications with modern design.</div>
@@ -104,7 +104,7 @@ export default function Heropage({dark}){
                 
                 
                 <div className="h-[9%] max w-[76%] flex justify-center items-center ">
-                    <div className="w-[85%] md:w-[70%] max-w-58 max-h-12 h-12 rounded-full bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-white/30 text-neutral-100 flex justify-center items-center text-[1rem] font-medium cursor-pointer ">
+                    <div className="w-[85%] md:w-90 max-w-58 max-h-12 h-12 rounded-full bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-white/30 text-neutral-100 flex justify-center items-center text-[1rem] font-medium cursor-pointer ">
                         <div className="px-2 md:px-0">Custom Comps at $29 <span className="text-neutral-500 line-through">$49</span></div>
                     </div>
                 </div>
