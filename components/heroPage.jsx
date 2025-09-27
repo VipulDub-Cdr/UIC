@@ -43,7 +43,7 @@ export default function Heropage({dark}){
 
             <div className="hidden absolute top-[8%] left-[1%] w-[90%] md:w-[20%] h-[5%] border-0 border-black md:flex flex-row justify-start items-start gap-2">
                 
-                <div id="leftbar" className="h-full absolute w-[3px] bg-neutral-700 rounded-lg"></div>
+                <div id="leftbar" className="h-[80%] absolute w-[3px] bg-neutral-700 rounded-lg"></div>
                 
                 <div id="welcome" className="h-full w-full px-2 flex flex-col justify-start items-start">
                     <div className="text-xl font-semibold text-neutral-800 dark:text-neutral-400">Su Swagatam aapka</div>
@@ -70,11 +70,11 @@ export default function Heropage({dark}){
                                     </div>
                                 </div>
                                 <div className="h-full w-full flex flex-row justify-start items-start p-2 gap-2">
-                                    <div className="h-full w-[16%] border-0 border-blue-400 flex justify-center items-center p-2">
+                                    <div className="h-10 w-[16%] border-0 border-blue-400 flex justify-center items-center p-2">
                                         <div className="w-full h-full rounded-lg bg-black flex justify-center items-center"><Check className="stroke-white w-[70%] h-[70%] rounded-xl bg-black" /></div>
                                     </div>
                                     <div className="h-full w-[85%] border-0 border-blue-400 flex flex-col justify-start items-start line">
-                                        <div className="text-[0.9rem] md:text-[0.9rem] font-semibold text-neutral-900">Open-source collection of comps</div>
+                                        <div className="text-[0.9rem]/4 md:text-[0.9rem] font-semibold text-neutral-900">Open-source collection of comps</div>
                                         <div className="text-[0.8rem] font-semibold text-neutral-400 tracking-tight">Aim to enhance your React web app</div>
                                     </div>
                                 </div>
@@ -103,12 +103,12 @@ export default function Heropage({dark}){
                 </div>
                 
                 
-                <div className="h-[9%] max w-[76%] flex justify-center items-center ">
-                    <div className="w-[85%] md:w-90 max-w-58 max-h-12 h-12 rounded-full bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-white/30 text-neutral-100 flex justify-center items-center text-[1rem] font-medium cursor-pointer ">
+                <div className="h-[9%] max w-full flex justify-center items-center ">
+                    <div className="w-[70%] md:w-60 max-h-12 h-12 rounded-full bg-black ring-2 ring-neutral-400 border-2 border-neutral-800 inset-shadow-sm inset-shadow-white/30 text-neutral-100 flex justify-center items-center text-[1rem] font-medium cursor-pointer ">
                         <div className="px-2 md:px-0">Custom Comps at $29 <span className="text-neutral-500 line-through">$49</span></div>
                     </div>
                 </div>
-                <div className="h-[10%] w-[80%] border-0 border-black font-semibold text-neutral-500 text-[0.8rem]/4 text-center">The custom template starts from $59. For inquiries, contact us at vipuldubey041@gmail.com</div>
+                <div className="h-[10%] w-[80%] border-0 border-black font-semibold text-neutral-500 text-[0.8rem]/4 text-center">The custom template starts from $59. For inquiries, contact us at <span className="underline underline-offset-2">vipuldubey041@gmail.com</span></div>
 
             </div>
 
