@@ -500,7 +500,7 @@ function Acc() {
         <AccordionTrigger>Backgrounds</AccordionTrigger>
         <AccordionContent>
           <div className="flex flex-col justify-start items-start gap-2 px- text-neutral-800">
-            * <button onClick={() => router.push("/codes#darkbg1")} className="cursor-pointer font-medium hover:text-black">Neutral-500 Vertical Lines</button>
+            <button onClick={() => router.push("/codes#darkbg1")} className="cursor-pointer font-medium hover:text-black">Neutral-500 Vertical Lines</button>
             {/* <button onClick={() => router.push("/codes#HeroPage1")} className="cursor-pointer font-medium hover:text-black">SpotLight</button> */}
           </div>
         </AccordionContent>
