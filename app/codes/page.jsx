@@ -379,7 +379,7 @@ codeString={`export default function metallicNavBar(){
 
         <Box id="morningButton" imageurl="/morningButton.png" tags={["React","GSAP","Tailwind CSS"]} heading="Morning Button" codeString={morningButtonCode}/>
 
-        <Box id="darkbg1" imageurl="/darkbg1.png" tags={["JSX","Tailwind CSS"]} heading="Neutral-500 Vertical Lines" codeString={`"use client"
+        <Box id="darkbg1" imageurl="/darkbg1.png" tags={["JSX","Tailwind CSS"]} heading="N-500 Vertical Lines" codeString={`"use client"
 
 export default function VerticaLinesBg() {
   
