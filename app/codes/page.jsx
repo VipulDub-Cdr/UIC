@@ -25,7 +25,7 @@ const poppins = Poppins({
     weight: ["400"]
 })
 
-export default function Sample(){
+export default function PoppinsPage(){
     return (
         <div className={\`w-full h-screen \${poppins.className} bg-[#EFEFEF] text-neutral-400 px-10\`}>
 
@@ -77,7 +77,7 @@ export default function Sample(){
 }` 
 const heroPage2Code = `"use client"
 
-export default function HelloScroll() {
+export default function HeroPage2() {
 
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center bg-[#131313]">
@@ -146,7 +146,7 @@ export default function HelloScroll() {
   const morningButtonCode = `"use client"
 import gsap from "gsap"
 
-export default function HelloScroll() {
+export default function MorningButton() {
   
     function handleEnter(){
       gsap.to("#samplefirstButton",{
@@ -379,6 +379,27 @@ codeString={`export default function metallicNavBar(){
 
         <Box id="morningButton" imageurl="/morningButton.png" tags={["React","GSAP","Tailwind CSS"]} heading="Morning Button" codeString={morningButtonCode}/>
 
+        <Box id="darkbg1" imageurl="/darkbg1.png" tags={["JSX","Tailwind CSS"]} heading="Neutral-500 Vertical Lines" codeString={`"use client"
+
+export default function VerticaLinesBg() {
+  
+  return (
+    <div className="w-screen h-screen overflow-hidden border-2 border-white/10 bg-black flex justify-around items-center">
+
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+          <div className=" h-full w-[1px] bg-neutral-500/15"></div>
+
+      </div>
+  )
+}
+`}/>
+
       </div>
     </div>
   )
@@ -479,8 +500,8 @@ function Acc() {
         <AccordionTrigger>Backgrounds</AccordionTrigger>
         <AccordionContent>
           <div className="flex flex-col justify-start items-start gap-2 px- text-neutral-800">
-            {/* <button onClick={() => router.push("/codes#HeroPage1")} className="cursor-pointer font-medium hover:text-black">Neutral-500 Vertical Lines</button>
-            <button onClick={() => router.push("/codes#HeroPage1")} className="cursor-pointer font-medium hover:text-black">SpotLight</button> */}
+            * <button onClick={() => router.push("/codes#darkbg1")} className="cursor-pointer font-medium hover:text-black">Neutral-500 Vertical Lines</button>
+            {/* <button onClick={() => router.push("/codes#HeroPage1")} className="cursor-pointer font-medium hover:text-black">SpotLight</button> */}
           </div>
         </AccordionContent>
       </AccordionItem>
